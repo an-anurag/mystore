@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Anurag's Store {% endblock %}
+
+{% block content %}
+<h1>Welcome to Anurag's store</h1>
+<h3>Browse my collections</h3>
+<ul>
+    <li><a href="{% url 'book:book_home' %}">Books</a></li>
+    <li>Disc</li>
+    <li>Cassettes</li>
+    <li>Movies</li>
+</ul>
+
+{% endblock %}

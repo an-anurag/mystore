@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Language {% endblock %}
+
+{% block content %}
+<div>
+    <h1>Add Language</h1>
+    <form action="{% url 'add_language' %}" method="post">
+        {% csrf_token %}
+        <p><input type="text" name=lang></p>
+        <p><input type="submit" value="Add"></p>
+    </form>
+</div>
+
+{% endblock %}
